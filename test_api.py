@@ -11,6 +11,10 @@ mysql_config = {
     'database': 'your_database_name'
 }
 
+@app.route('/hello', methods=['GET'])
+def hello_world():
+	return "Hello world!"
+
 @app.route('/create_table', methods=['GET'])
 def create_table():
     try:
